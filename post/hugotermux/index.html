@@ -17,7 +17,7 @@ mkdir HugoBlog cd HugoBlog 创建一个新网站。
 hugo new site blog # 你可以用任何字符代替&#34;blog&#34;。 cd blog # 进入该文件夹。 mkdir -p themes # 创建 &#34;themes&#34; 目录。 cd themes # 进入 &#34;themes&#34; 目录。 这个时候你就可以去Hugo官网挑选你喜爱の主题啦~ 挑选完了以后就git clone一下。 （你可以在你选的主题中找它的链接
 git clone 你的链接 然后回到你的网站的根目录，开始对你的网站进行自定义。（自定义：指编辑config.toml）
 cd .. vim config.toml 这里讲一下vim的基本操作：
- 点击你要编辑的地方，输入i 进行编辑 编辑好后点击左下角的ESC 输入:wq保存并退出；输入:q直接退出 以下提供基于cupper主题的config.toml编辑示例。    baseURL = &#34;http://example.">
+ 点击你要编辑的地方，输入i 进行编辑 编辑好后点击左下角的ESC 输入:wq保存并退出；输入:q直接退出 以下提供基于cupper主题的config.toml编辑示例。  baseURL = &#34;http://example.org/&#34; languageCode = &#34;en-us&#34; title = &#34;你的博客标题&#34; disqusShortname = &#34;MSCxar0293&#34; [params] description = &#34;logo下的描述文字&#34; footer = &#34;每一页页脚显示的内容&#34; search = true [menu] [[menu.">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="https://MSCxar-0293.github.io/apple-touch-icon.png">
@@ -367,9 +367,8 @@ vim config.toml
 <li>进行编辑</li>
 <li>编辑好后点击左下角的<code>ESC</code></li>
 <li>输入<code>:wq</code>保存并退出；输入<code>:q</code>直接退出
-以下提供基于<code>cupper</code>主题的<code>config.toml</code>编辑示例。</li>
-</ul>
-<pre><code>
+以下提供基于<code>cupper</code>主题的<code>config.toml</code>编辑示例。
+
 
 
 
@@ -394,11 +393,13 @@ url = &#34;/post/&#34;
 weight = 2
 </span>
 </code></div>
+</li>
+</ul>
+<ol>
+<li>true是自动生成搜索框 false是没有搜索框</li>
+<li>你可以根据你网页内容文件夹的多少来自定义这里。name就是显示内容，url就是文件夹url，weight就是排序用的。</li>
+</ol>
 
-
-1. true是自动生成搜索框 false是没有搜索框
-2. 你可以根据你网页内容文件夹的多少来自定义这里。name就是显示内容，url就是文件夹url，weight就是排序用的。
-</code></pre>
   </main>
   <div id="disqus-container">
   
