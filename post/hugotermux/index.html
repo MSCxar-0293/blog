@@ -6,11 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.86.0" />
-  <link rel="canonical" href="/categories/">
+  <link rel="canonical" href="/post/hugotermux/">
 
   
     
-    <meta name="description" content="Categories">
+    <meta name="description" content="   本文将讲述一种低成本搭建个人博客的方式。理论上来说你只要一部手机就能完成~有问题可以来tg群组讨论。   （我不会写开场白，直接开始讲吧✓）
+ 本地安装 1. 安装Termux 自行上网搜索资源，下载Termux。 大致长这样。
+2. 在Termux安装hugo apt-get install hugo 输入该指令，回车。为了让文件夹看起来整洁一些，可以新建一个文件夹来放你的博客文件们，然后进入该文件夹。
+mkdir HugoBlog cd HugoBlog 创建一个新网站。
+hugo new site blog //你可以用任何字符代替&#34;blog&#34;。 cd blog //进入该文件夹。 ">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="https://MSCxar-0293.github.io/apple-touch-icon.png">
@@ -38,7 +42,7 @@
 
   
   
-  <title>Categories | MSCxar0293&#39;s blog</title>
+  <title>超低成本搭建博客！Hugo框架&#43;Termux&#43;github pages | MSCxar0293&#39;s blog</title>
 </head>
 
   <body>
@@ -257,33 +261,131 @@
         <div>
           
   <main id="main">
-    <h1>Categories</h1>
-    <ul class="patterns-list">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      超低成本搭建博客！Hugo框架&#43;Termux&#43;github pages
+    </h1>
+
+    <div class="date">
       
-        <li>
-          <h2>
-            <a href="/categories/duh/">
+      
+      <strong>Publish date: </strong>Jul 27, 2021
+      
+        
+      
+    </div>
+
+    
+      <div class="tags">
+        <strong>Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              (2) Duh
-            </a>
-          </h2>
-        </li>
-      
-        <li>
-          <h2>
-            <a href="/categories/tech-talk/">
+              
+              <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">个人博客搭建</a>
+            </li>
+          
+            <li>
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              (1) Tech Talk
-            </a>
-          </h2>
-        </li>
+              
+              <a href="/tags/hugo/">Hugo</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="/tags/termux/">Termux</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="/tags/github-pages/">github pages</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
+    
       
-    </ul>
+
+
+    
+
+    <p><aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+本文将讲述一种低成本搭建个人博客的方式。理论上来说你只要一部手机就能完成~有问题可以来tg群组讨论。
+
+  </div>
+</aside>
+
+（我不会写开场白，直接开始讲吧✓）</p>
+<hr>
+<h2 id="本地安装">本地安装</h2>
+<h3 id="1-安装termux">1. 安装Termux</h3>
+<p>自行上网搜索资源，下载Termux。
+<img src="Screenshot_20210727_183228.jpg" alt="">大致长这样。</p>
+<h3 id="2-在termux安装hugo">2. 在Termux安装hugo</h3>
+<pre><code>apt-get install hugo
+</code></pre><p>输入该指令，回车。为了让文件夹看起来整洁一些，可以新建一个文件夹来放你的博客文件们，然后进入该文件夹。</p>
+<pre><code>mkdir HugoBlog
+cd HugoBlog
+</code></pre><p>创建一个新网站。</p>
+<pre><code>hugo new site blog //你可以用任何字符代替&quot;blog&quot;。
+cd blog //进入该文件夹。
+</code></pre>
   </main>
+  <div id="disqus-container">
+  
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <div id="disqus_thread">
+        </div>
+        <script type="application/javascript">
+          function showComments() {
+            // Config
+var disqus_config = function () {
+};
+// Build and append comments 
+var d = document;
+var s = d.createElement('script');
+s.async = true;
+s.src = '//' + "MSCxar0293" + '.disqus.com/embed.js';
+s.setAttribute('data-timestamp', + new Date());
+(d.head || d.body).appendChild(s);
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
+  
+</div>
+
 
           
             <footer role="contentinfo">
