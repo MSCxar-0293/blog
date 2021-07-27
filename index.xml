@@ -8,6 +8,31 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 24 Jul 2021 21:22:03 +0100</lastBuildDate><atom:link href="https://MSCxar-0293.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>超低成本搭建博客！Hugo框架&#43;Termux&#43;github pages</title>
+      <link>https://MSCxar-0293.github.io/post/hugotermux/</link>
+      <pubDate>Tue, 27 Jul 2021 10:15:13 +0000</pubDate>
+      
+      <guid>https://MSCxar-0293.github.io/post/hugotermux/</guid>
+      <description>本文将讲述一种低成本搭建个人博客的方式。理论上来说你只要一部安卓手机就能完成~有问题可以来tg群组讨论。   （我不会写开场白，直接开始讲吧✓）
+ 安装教程 1. 安装Termux 自行上网搜索资源，下载Termux。 大致长这样。
+2. 在Termux安装hugo pkg install hugo 输入该指令，回车。为了让文件夹看起来整洁一些，可以新建一个文件夹来放你的博客文件们，然后进入该文件夹。
+mkdir HugoBlog cd HugoBlog 创建一个新网站。
+hugo new site blog # 你可以用任何字符代替&amp;quot;blog&amp;quot;。 cd blog # 进入该文件夹。 mkdir -p themes # 创建 &amp;quot;themes&amp;quot; 目录。 cd themes # 进入 &amp;quot;themes&amp;quot; 目录。 这个时候你就可以去Hugo官网挑选你喜爱の主题啦~ 挑选完了以后就git clone一下。 （你可以在你选的主题中找它的链接
+git clone 你的链接 然后回到你的网站的根目录，开始对你的网站进行自定义。（自定义：指编辑config.toml）
+cd .. vim config.toml 这里讲一下vim的基本操作：
+ 点击你要编辑的地方，输入i 进行编辑 编辑好后点击左下角的ESC 输入:wq保存并退出；输入:q直接退出 以下提供基于cupper主题的config.toml编辑示例。  baseURL = &amp;#34;http://example.org/&amp;#34; languageCode = &amp;#34;en-us&amp;#34; title = &amp;#34;你的博客标题&amp;#34; disqusShortname = &amp;#34;你在disqus的网站名 下文有详解&amp;#34; [params] description = &amp;#34;logo下的描述文字&amp;#34; footer = &amp;#34;每一页页脚显示的内容&amp;#34; search = true [menu] [[menu.</description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://MSCxar-0293.github.io/post/test/</link>
+      <pubDate>Mon, 26 Jul 2021 02:53:38 +0000</pubDate>
+      
+      <guid>https://MSCxar-0293.github.io/post/test/</guid>
+      <description>meow meow This is a note!</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://MSCxar-0293.github.io/about/</link>
       <pubDate>Sun, 25 Jul 2021 15:26:32 +0000</pubDate>
