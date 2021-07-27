@@ -11,13 +11,13 @@
   
     
     <meta name="description" content="本文将讲述一种低成本搭建个人博客的方式。理论上来说你只要一部手机就能完成~有问题可以来tg群组讨论。   （我不会写开场白，直接开始讲吧✓）
- 本地安装 1. 安装Termux 自行上网搜索资源，下载Termux。 大致长这样。
+ 安装教程 1. 安装Termux 自行上网搜索资源，下载Termux。 大致长这样。
 2. 在Termux安装hugo pkg install hugo 输入该指令，回车。为了让文件夹看起来整洁一些，可以新建一个文件夹来放你的博客文件们，然后进入该文件夹。
 mkdir HugoBlog cd HugoBlog 创建一个新网站。
 hugo new site blog # 你可以用任何字符代替&#34;blog&#34;。 cd blog # 进入该文件夹。 mkdir -p themes # 创建 &#34;themes&#34; 目录。 cd themes # 进入 &#34;themes&#34; 目录。 这个时候你就可以去Hugo官网挑选你喜爱の主题啦~ 挑选完了以后就git clone一下。 （你可以在你选的主题中找它的链接
 git clone 你的链接 然后回到你的网站的根目录，开始对你的网站进行自定义。（自定义：指编辑config.toml）
 cd .. vim config.toml 这里讲一下vim的基本操作：
- 点击你要编辑的地方，输入i 进行编辑 编辑好后点击左下角的ESC 输入:wq保存并退出；输入:q直接退出 以下提供基于cupper主题的config.toml编辑示例。  baseURL = &#34;http://example.org/&#34; languageCode = &#34;en-us&#34; title = &#34;你的博客标题&#34; disqusShortname = &#34;MSCxar0293&#34; [params] description = &#34;logo下的描述文字&#34; footer = &#34;每一页页脚显示的内容&#34; search = true [menu] [[menu.">
+ 点击你要编辑的地方，输入i 进行编辑 编辑好后点击左下角的ESC 输入:wq保存并退出；输入:q直接退出 以下提供基于cupper主题的config.toml编辑示例。  baseURL = &#34;http://example.org/&#34; languageCode = &#34;en-us&#34; title = &#34;你的博客标题&#34; disqusShortname = &#34;你在disqus的用户名&#34; [params] description = &#34;logo下的描述文字&#34; footer = &#34;每一页页脚显示的内容&#34; search = true [menu] [[menu.">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="https://MSCxar-0293.github.io/apple-touch-icon.png">
@@ -324,6 +324,33 @@ cd .. vim config.toml 这里讲一下vim的基本操作：
     
       
 
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#%e5%ae%89%e8%a3%85%e6%95%99%e7%a8%8b">
+            安装教程
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#%e9%82%a3%e4%ba%9b%e5%b9%b4%e6%88%91%e8%b5%b0%e8%bf%87%e7%9a%84%e5%bc%af%e8%b7%aftvt">
+            那些年我走过的弯路TvT
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
 
     
 
@@ -340,7 +367,7 @@ cd .. vim config.toml 这里讲一下vim的基本操作：
 
 <p>（我不会写开场白，直接开始讲吧✓）</p>
 <hr>
-<h2 id="本地安装">本地安装</h2>
+<h2 id="安装教程">安装教程</h2>
 <h3 id="1-安装termux">1. 安装Termux</h3>
 <p>自行上网搜索资源，下载Termux。
 <img src="Screenshot_20210727_183228.jpg" alt="">大致长这样。</p>
@@ -376,13 +403,12 @@ vim config.toml
 baseURL = &#34;http://example.org/&#34;
 languageCode = &#34;en-us&#34;
 title = &#34;你的博客标题&#34;
-disqusShortname = &#34;MSCxar0293&#34;
+<span class='highlight'>disqusShortname = &#34;你在disqus的用户名&#34;</span>
 [params]
     description = &#34;logo下的描述文字&#34;
     footer = &#34;每一页页脚显示的内容&#34;
     <span class='highlight'>search = true</span>
-<span class='highlight'>
-[menu]
+<span class='highlight'>[menu]
 [[menu.nav]]
 name = &#34;Home 首页&#34;
 url = &#34;/&#34;
@@ -390,13 +416,106 @@ weight = 1
 [[menu.nav]]
 name = &#34;Blog 文章&#34;
 url = &#34;/post/&#34;
-weight = 2
-</span>
+weight = 2</span>
 </code></div>
 </li>
 </ul>
-<p>1.true是自动生成搜索框 false是没有搜索框
-2.你可以根据你网页内容文件夹的多少来自定义这里。name就是显示内容，url就是文件夹url，weight就是排序用的。</p>
+<ol>
+<li>disqus在大陆已经无法使用，所以这里可填可不填</li>
+<li>true是自动生成搜索框 false是没有搜索框</li>
+<li>你可以根据你网页内容文件夹的具体内容来自定义这里。name就是显示内容，url就是文件夹url，weight就是排序。</li>
+</ol>
+<h3 id="3-发布文章">3. 发布文章</h3>
+<ol>
+<li>进入网站根目录</li>
+</ol>
+<pre><code>cd ~/HugoBlog/blog
+</code></pre><ol start="2">
+<li>新建文章并编辑</li>
+</ol>
+<pre><code>hugo new post/这是标题你随便起.md
+cd content/post
+vim 这是标题你随便起.md
+</code></pre><aside aria-label="note" class="note">
+  <div>
+    <svg class="sign" aria-hidden="true" viewBox="0 0 41.667306 41.66729" focusable="false">
+      <use xlink:href="#info"></use>
+    </svg>
+    
+注：文章皆为md（markdown）格式，建议了解一下md格式后编辑文章。编辑文章后记得保存。
+
+  </div>
+</aside>
+
+<h3 id="4-部署至github">4. 部署至Github</h3>
+<p>第一步当然是建库！建一个「朴实无华不带任何默认文件的」、「以“你的用户名.github.io”为名字的」库。
+没有账号就去<a href="https://github.com/">Gayhub</a>注册一个:-(</p>
+<p>注册好后，手机端打开火狐浏览器/Chrome的<code>桌面版网站</code>功能，点击网页右上角的加号，点击<code>New Repository</code>即可创建新仓库。</p>
+<p>创建完后，<strong>什么都别动</strong>，回到Termux。</p>
+<pre><code>hugo --theme=主题名（建议去主题官网查看） --baseUrl=&quot;https://你的用户名.github.io/&quot; --buildDrafts
+cd ~/HugoBlog/blog/public
+</code></pre><p>初始化git仓库。</p>
+<pre><code>git init
+git add .
+git commit -m &quot;第一次提交&quot;
+git remote add origin git@github.com:你的用户名/你的用户名.github.io.git
+git push -u origin master
+</code></pre><p>到这里，你的部署就结束了。访问[你的用户名.github.io]看看你部署的成果吧~</p>
+<p>接下来每次你想发布文章，就遵循上面的第三步和第四步就好了。<strong>发布文章不需要git init和git remote！！</strong></p>
+<p>下面我来分享一下我走过的弯路。</p>
+<hr>
+<h2 id="那些年我走过的弯路tvt">那些年我走过的弯路TvT</h2>
+<h3 id="ssh-key">SSH key</h3>
+<p>首先就是ssh的问题了。<code>git push -u origin master</code>的时候会碰到报错，如：</p>
+<ul>
+<li>cannot run ssh: No such file or directory</li>
+<li>Key is invalid. You must supply a key in OpenSSH public key format</li>
+</ul>
+<p>解决ssh配置不当导致的报错，首先要装ssh。</p>
+<pre><code>pkg install openssh
+</code></pre><p>然后生成一个ssh钥匙。</p>
+<pre><code>ssh-keygen –t rsa –C “你的邮箱”
+</code></pre><p>设置好密码（输入密码时它是不会显示的，自己记住就行）后，它会给你一个路径，你进入这个文件夹，然后使用vim打开.pub文件。用手滑动复制钥匙后，去你的github的<code>settings</code>里面，选择<code>SSH and GPG keys</code>选项卡，点击<code>New SSH key</code>。在<code>key</code>那个框里黏贴你复制的东西（<code>title</code>填什么都不要紧，你认得出就行），点<code>Add SSH key</code>即可。</p>
+<p>回到termux，就可以继续刚才的配置程序了。</p>
+<h3 id="cupper虽然demo网页自带show-comments按钮但是自己配置后点开显示disqus-comments-are-disabled">cupper虽然demo网页自带show comments按钮但是自己配置后点开显示“Disqus comments are disabled.”</h3>
+<p>这个问题我在<code>Hugo Forum</code>上找到了主题作者给出的答案。现粘贴一下~</p>
+<blockquote>
+<p>Hi there.
+Have you set <code>disqusShortname</code> in your config file?
+Also, disqus comments are disabled when running hugo server. They will only appear on your live site.
+You can temporarily override this by changing <a href="https://github.com/zwbetz-gh/cupper-hugo-theme/blob/eec634badd668dd8b9f1cc93c18ece1e4c61ae27/layouts/partials/disqus.html#L7">this line</a>
+And replace <code>$isServer</code> with false</p>
+</blockquote>
+<div class="expandable-section">
+  
+    <h2>
+  
+    
+    
+    
+    
+    
+    <button aria-expanded="false" data-expands="js-expandable-ff0e03dc8c7cd42fa6ea0830c17a6e0f">
+      <span class="expandable-label">汉化这段文字</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" ry="5" height="10" width="60" y="1012.4" x="5"/>
+        </g>
+      </svg>
+    </button>
+  
+    </h2>
+  
+  <div id="js-expandable-ff0e03dc8c7cd42fa6ea0830c17a6e0f" hidden>
+    嘿我的老伙计！
+宁在宁那该死的config文件设置<code>disqusShortname</code>了吗？（译者注：<code>disqusShortname</code>就是你在disqus上的网站名，例如haha.disqus.com的<code>disqusShortname</code>就是<code>haha</code>）
+还有，disqus的评论区在运行hugo（本地）服务器的时候是没p用哒！只有在你的活服务器（指你挂网站的服务器）上才有用嗷！
+宁可以通过更改[这一行](<a href="https://github.com/zwbetz-gh/cupper-hugo-theme/blob/eec634badd668dd8b9f1cc93c18ece1e4">https://github.com/zwbetz-gh/cupper-hugo-theme/blob/eec634badd668dd8b9f1cc93c18ece1e4</a>
+c61ae27/layouts/partials/disqus.html#L7)并将这一行的<code>$isServer</code>替换为<code>false</code>（来让它生效）！
+  </div>
+</div>
+
 
   </main>
   <div id="disqus-container">
