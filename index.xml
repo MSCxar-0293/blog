@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 24 Jul 2021 21:22:03 +0100</lastBuildDate><atom:link href="https://MSCxar-0293.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Bbb</title>
+      <link>https://MSCxar-0293.github.io/test/b/bbb/</link>
+      <pubDate>Thu, 05 Aug 2021 10:00:46 +0000</pubDate>
+      
+      <guid>https://MSCxar-0293.github.io/test/b/bbb/</guid>
+      <description>这是一段内容</description>
+    </item>
+    
+    <item>
+      <title>Aaa</title>
+      <link>https://MSCxar-0293.github.io/test/a/aaa/</link>
+      <pubDate>Thu, 05 Aug 2021 10:00:34 +0000</pubDate>
+      
+      <guid>https://MSCxar-0293.github.io/test/a/aaa/</guid>
+      <description>这是一段文字哦</description>
+    </item>
+    
+    <item>
       <title>超低成本搭建博客！Hugo框架&#43;Termux&#43;github pages</title>
       <link>https://MSCxar-0293.github.io/post/hugotermux/</link>
       <pubDate>Tue, 27 Jul 2021 10:15:13 +0000</pubDate>

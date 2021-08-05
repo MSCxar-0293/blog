@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tests on MSCxar0293&#39;s blog</title>
+    <link>https://MSCxar-0293.github.io/test/</link>
+    <description>Recent content in Tests on MSCxar0293&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Aug 2021 10:00:46 +0000</lastBuildDate><atom:link href="https://MSCxar-0293.github.io/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bbb</title>
+      <link>https://MSCxar-0293.github.io/test/b/bbb/</link>
+      <pubDate>Thu, 05 Aug 2021 10:00:46 +0000</pubDate>
+      
+      <guid>https://MSCxar-0293.github.io/test/b/bbb/</guid>
+      <description>这是一段内容</description>
+    </item>
+    
+    <item>
+      <title>Aaa</title>
+      <link>https://MSCxar-0293.github.io/test/a/aaa/</link>
+      <pubDate>Thu, 05 Aug 2021 10:00:34 +0000</pubDate>
+      
+      <guid>https://MSCxar-0293.github.io/test/a/aaa/</guid>
+      <description>这是一段文字哦</description>
+    </item>
+    
+  </channel>
+</rss>
