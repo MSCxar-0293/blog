@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://MSCxar-0293.github.io/test/b/bbb/</loc>
-    <lastmod>2021-08-05T10:00:46+00:00</lastmod>
+    <loc>https://MSCxar-0293.github.io/test/b/bbba/</loc>
+    <lastmod>2021-08-05T10:14:47+00:00</lastmod>
   </url><url>
     <loc>https://MSCxar-0293.github.io/test/</loc>
+    <lastmod>2021-08-05T10:14:47+00:00</lastmod>
+  </url><url>
+    <loc>https://MSCxar-0293.github.io/test/a/aaab/</loc>
+    <lastmod>2021-08-05T10:14:14+00:00</lastmod>
+  </url><url>
+    <loc>https://MSCxar-0293.github.io/test/b/bbb/</loc>
     <lastmod>2021-08-05T10:00:46+00:00</lastmod>
   </url><url>
     <loc>https://MSCxar-0293.github.io/test/a/aaa/</loc>
