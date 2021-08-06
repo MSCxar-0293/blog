@@ -31,8 +31,8 @@ cd .. vim config.toml 这里讲一下vim的基本操作：
       
       <guid>https://MSCxar-0293.github.io/post/6/</guid>
       <description> 只是无聊地汉化了一下 但我觉得汉化这个其实没p用（）
- 原文地址戳
-↓以下是正文↓（最后更新：20210805） Bots：为开发者准备的介绍 bot们是运行在tg内部的第三方应用。用户可以通过给bot发送信息/使用指令/选择待选选项来与它们交互。你可以向我们的bot api发送HTTPS请求来控制你的bot。
+ 原文地址戳 ↓以下是正文↓（最后更新：20210805施工中&amp;hellip;）
+ Bots：为开发者准备的介绍 bot们是运行在tg内部的第三方应用。用户可以通过给bot发送信息/使用指令/选择待选选项来与它们交互。你可以向我们的bot api发送HTTPS请求来控制你的bot。
 1. bot们可以用来做什么？ 让我来举几个例子。
  接收自定义提醒和新闻。 一个bot可以扮演一个智能推送员，在内容发布后立刻向你推送相关内容。 与其他服务相结合。 一个bot可以通过连接tg之外的服务内容来丰富tg的聊天时光。e.g. Gmail bot GIF bot IMDB bot Wiki bot Music bot Youtube bot GithubBot 从tg用户那里收取他们的付款。 一个bot可以提供收款服务或者作为一个虚拟的商店前台工作。获取更多信息&amp;hellip;（未汉化/计划汉化） 创建个性化工具。 一个bot可以向你提供报警器服务，天气预报服务，翻译服务，格式设计服务等其他服务。 创建单人/多人游戏。 一个bot可以提供许多h5实例。  </description>
     </item>
